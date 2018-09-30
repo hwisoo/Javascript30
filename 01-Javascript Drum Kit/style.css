@@ -10,6 +10,15 @@ body, html {
     font-family: sans-serif;
 }
 
+h1 {
+    font-family: 'Rock Salt', cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 3px 3px 4px #000000;
+    
+}
+
 .keys {
     display: flex;
     flex: 1;
