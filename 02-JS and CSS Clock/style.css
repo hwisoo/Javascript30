@@ -1,5 +1,5 @@
 html {
-    background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+    background: #018DED url(moon.jpg);
     background-size: cover;
     font-family: 'helvetica neue';
     text-align: center;
@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    margin: 0;
     font-size: 2rem;
     display: flex;
     flex: 1;
@@ -37,14 +36,55 @@ body {
     transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
+.clock-face::before {
+    background-color: #000;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 46.5%;
+    position: absolute;
+    top: 47.5%;
+    width: 20px;
+  }
+
 .hand {
     width: 50%;
     height: 6px;
-    background: black;
+    background: white;
     position: absolute;
+    right: 50%;
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+
+.hour-hand {
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    height: 10px;
+    width: 40%;
+  }
+  
+  
+  .min-hand {
+    height: 5px;
+  }
+  
+  .second-hand {
+    height: 2px;
+    background-color: #eeaf1e;
+    width: 54%;
+  }
+  
+  .second-hand::before {
+    background-color: #eeaf1e;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 95.5%;
+    position: absolute;
+    top: -4px;
+    width: 10px;
+  }
