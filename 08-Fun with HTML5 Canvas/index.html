@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML5 Canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls" rel="stylesheet">
 </head>
 <body>
+    <h1>Click and Drag below to Draw!</h1>
     <canvas id="draw" width="800" height="800"></canvas>
     <script>
         const canvas = document.querySelector('#draw');
@@ -63,6 +65,13 @@
     <style>
         html, body {
             margin: 0;
+        }
+        h1 {
+            font-family: 'Crafty Girls', cursive;
+            text-align: center;
+            background: #f0e172;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </body>
